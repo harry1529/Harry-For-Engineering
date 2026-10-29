@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Hanken Grotesk', -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --color-canvas: #090a0f;
+  --color-surface-dim: #121318;
+  --color-surface-card: #1a1b21;
+  --color-surface-high: #292a2f;
+  --color-hairline: #262a36;
+  --color-hairline-bright: #3d4356;
+  --color-text-main: #f8fafc;
+  --color-text-dim: #c3c6d7;
+  --color-text-muted: #8d90a0;
+
+  --color-cse: #2563eb;
+  --color-aiml: #8b5cf6;
+  --color-ece: #f59e0b;
+  --color-ee: #06b6d4;
+  --color-mech: #ef4444;
+  --color-civil: #10b981;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: #090a0f;
+  color: #f8fafc;
+  letter-spacing: -0.01em;
+}
+
+h1, h2, h3, h4, h5, .font-display {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+}
+
+code, pre, .font-mono {
+  font-family: var(--font-mono);
+}
+
+/* Hard-edged Neo-Brutalist 0px offsets */
+.hard-shadow-cobalt {
+  box-shadow: 3px 3px 0px 0px #2563eb;
+}
+.hard-shadow-amber {
+  box-shadow: 3px 3px 0px 0px #f59e0b;
+}
+.hard-shadow-violet {
+  box-shadow: 3px 3px 0px 0px #8b5cf6;
+}
+.hard-shadow-cyan {
+  box-shadow: 3px 3px 0px 0px #06b6d4;
+}
+.hard-shadow-red {
+  box-shadow: 3px 3px 0px 0px #ef4444;
+}
+.hard-shadow-emerald {
+  box-shadow: 3px 3px 0px 0px #10b981;
+}
+.hard-shadow-white {
+  box-shadow: 3px 3px 0px 0px #ffffff;
+}
+.hard-shadow-dark {
+  box-shadow: 3px 3px 0px 0px #000000;
+}
+
+/* Hard border 0px utility */
+.brutal-border {
+  border: 1px solid #262a36;
+}
+
+.brutal-border-thick {
+  border: 2px solid #262a36;
+}
+
+/* Subtle blueprint grid */
+.bg-blueprint-grid {
+  background-image: 
+    linear-gradient(to right, rgba(38, 42, 54, 0.35) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(38, 42, 54, 0.35) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* Blueprint dot matrix */
+.bg-blueprint-dots {
+  background-image: radial-gradient(rgba(38, 42, 54, 0.6) 1px, transparent 0);
+  background-size: 20px 20px;
+}
